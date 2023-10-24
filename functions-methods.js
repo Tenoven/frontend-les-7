@@ -59,7 +59,7 @@ function checkEmailValidity (email) {
             console.log("@")
             valid = false
         }
-        if (email.lastIndexOf("."> email.length-1)){
+        if (email.lastIndexOf(".") >= email.length - 1) {
             console.log(".")
             valid = false
         }
@@ -76,4 +76,4 @@ function checkEmailValidity (email) {
     }
 }
 
-checkEmailValidity("n.eeken@novi.nl")
+checkEmailValidity("n.eeken@novinl.")
