@@ -14,6 +14,18 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden?
 // Log het antwoord in de terminal.
 
+function cumlaude (mark_array) {
+    let counter = 0
+    for (i in mark_array) {
+        // console.log(grades[i])
+        if (mark_array[i] >= 8) {
+            counter +=1
+        }
+    }
+    return(counter)
+}
+
+console.log(cumlaude([8, 9, 4, 6, 10]))
 // ---- Verwachte uitkomst: 6
 
 
@@ -40,6 +52,16 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // * Hoe zorgt ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten?
 // Log het antwoord in de terminal.
 
+// function average(mark_array) {
+//     let total = 0
+//     for (i in mark_array) {
+//         total += mark_array[i]
+//     }
+//     return total/mark_array.length
+// }
+//
+// console.log(average(grades))
+
 // ---- Verwachte uitkomst: 6.642857142857143
 
 
@@ -58,7 +80,17 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
+function average(mark_array) {
+    let total = 0
+    for (i in mark_array) {
+        total += mark_array[i]
+    }
+    return total/mark_array.length
+}
 
+const temp = average(grades)
+console.log(temp)
+console.log(Math.round((temp+Number.EPSILON)*100)/100);
 
 
 /* Bonusopdracht: hoogste cijfer */
