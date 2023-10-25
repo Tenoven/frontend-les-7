@@ -52,15 +52,15 @@ console.log(cumlaude([8, 9, 4, 6, 10]))
 // * Hoe zorgt ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten?
 // Log het antwoord in de terminal.
 
-// function average(mark_array) {
-//     let total = 0
-//     for (i in mark_array) {
-//         total += mark_array[i]
-//     }
-//     return total/mark_array.length
-// }
-//
-// console.log(average(grades))
+function average(mark_array) {
+    let total = 0
+    for (i in mark_array) {
+        total += mark_array[i]
+    }
+    return total/mark_array.length
+}
+
+console.log(average(grades))
 
 // ---- Verwachte uitkomst: 6.642857142857143
 

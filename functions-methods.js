@@ -9,11 +9,11 @@
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
-// function getEmailDomain (email) {
-//     return (email.substring(email.indexOf("@")+1 , email.length));
-// }
-//
-// console.log(getEmailDomain("n.eeken@novi-education.nl"))
+function getEmailDomain (email) {
+    return (email.substring(email.indexOf("@")+1 , email.length));
+}
+
+console.log(getEmailDomain("n.eeken@novi-education.nl"))
 
 // console.log(getEmailDomain("n.eeken@novi-education.nl"))
 
@@ -24,20 +24,21 @@
 // typeOfEmail("t.mellink@novi.nl") geeft geeft "Medewerker"
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
-// function typeOfEmail (email) {
-//     let domain = email.substring(email.indexOf("@")+1 , email.length)
-//
-//     if (domain === "novi-education.nl") {
-//         console.log("student")
-//     }
-//     else if (domain === "novi.nl") {
-//         console.log("Medewerker")
-//     } else {
-//         console.log("Extern")
-//     }
-// }
-//
-// typeOfEmail("a.wiersma@outlook.com")
+
+function typeOfEmail (email) {
+    let domain = email.substring(email.indexOf("@")+1 , email.length)
+
+    if (domain === "novi-education.nl") {
+        console.log("student")
+    }
+    else if (domain === "novi.nl") {
+        console.log("Medewerker")
+    } else {
+        console.log("Extern")
+    }
+}
+
+typeOfEmail("a.wiersma@outlook.com")
 
 
 /* Opdracht  3 */
